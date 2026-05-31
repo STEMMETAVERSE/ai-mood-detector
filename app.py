@@ -7,7 +7,7 @@ HF_TOKEN = os.getenv("HF_TOKEN")
 client = InferenceClient(token=HF_TOKEN)
 
 st.title("😊 Mood Detector")
-text = st.text_area("How are you feeling?")
+topic = st.text_area("How are you feeling?")
 
 if st.button("Analyze Mood"): 
     if not topic.strip(): 
