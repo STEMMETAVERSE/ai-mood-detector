@@ -28,6 +28,6 @@ if st.button("Analyze Mood"):
                     st.write(f"**{emotion.label}** : {emotion.score:.2%}")
                 top_emotion = max(response, key=lambda x: x.score)
                 st.success( f"Primary Emotion: {top_emotion.label}") 
-        except Exception as e: 
-            # This explicitly unpacks server messages instead of dropping HTML text 
-            st.error(f"System Response: {e}")
+            except Exception as e: 
+                # This explicitly unpacks server messages instead of dropping HTML text 
+                st.error(f"System Response: {e}")
